@@ -54,13 +54,7 @@ console.log(letNoIndex("pineapples", 5));
 
 console.log(letNoIndex("",2));
 
-*/
 
-
-//**4**
-//Write a function that takes two numbers and adds them together. 
-//Test your function on a few inputs. Write in the comments what happens when you 
-//pass something other than a number to your function.
 
 //**4**
 //Write a function that takes two numbers and adds them together. 
@@ -93,3 +87,38 @@ console.log('true numbers:');
 console.log(add(3,5));
 console.log(add(8,13));
 console.log(add(21,34));
+
+*/
+
+
+//**5**
+//Write a function that takes two numbers and multiplies them together. Test your 
+//function on a few inputs. Write in your comments what happens when you pass 
+//something other than a number to your function.
+
+var times = function (n,q) {
+    return (parseInt(n) * parseInt(q));
+}
+
+console.log("Pass: NaN + NaN");
+console.log(times(NaN,NaN));
+
+console.log("Pass: string + string");
+console.log(times("n","q"));
+
+console.log("Pass: string + number");
+console.log(times("n",6));
+
+console.log("Pass: string '0' + number");
+console.log(times("0",6));
+
+console.log("Pass: empty string + number");
+console.log(times("",6));
+
+console.log("Pass: empty string + empty string");
+console.log(times("",""));
+
+console.log('true numbers:');
+console.log(times(3,5));
+console.log(times(8,13));
+console.log(times(21,34));
