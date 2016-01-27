@@ -122,7 +122,7 @@ console.log('true numbers:');
 console.log(times(3,5));
 console.log(times(8,13));
 console.log(times(21,34));
-*/
+
 
 //**6**
 //Write a function that takes two numbers and a string. If the string is ‘add’, 
@@ -155,3 +155,18 @@ console.log(basicOperations("add",1,1));
 console.log(basicOperations("subtract",4,9));
 console.log(basicOperations("cheese",2,3));
 console.log(basicOperations("add","peanut butter","jelly"));
+*/
+
+
+//**7**
+//Write a function that takes a string and a number, and returns the string 
+//repeated that many number of times. Test your function with various inputs.
+
+var stringRepeat = function(string,number) {
+    return(string.repeat(parseInt(number)));
+}
+
+console.log(stringRepeat("fun ",5));
+console.log(stringRepeat("more ",6));
+console.log(stringRepeat("fun ",7));
+
