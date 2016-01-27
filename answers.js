@@ -88,7 +88,7 @@ console.log(add(3,5));
 console.log(add(8,13));
 console.log(add(21,34));
 
-*/
+
 
 
 //**5**
@@ -122,3 +122,36 @@ console.log('true numbers:');
 console.log(times(3,5));
 console.log(times(8,13));
 console.log(times(21,34));
+*/
+
+//**6**
+//Write a function that takes two numbers and a string. If the string is ‘add’, 
+//then return the sum of the numbers. If the string is ‘subtract’, return the 
+//difference. If the string is ‘mult’, return the product. If the string is ‘div’, 
+//return the ratio. Otherwise return 0.
+
+var basicOperations = function(operator, n, q) {
+    if (operator === 'add') {
+        return (parseInt(n) + parseInt(q));
+    }
+    else if (operator === 'subtract') {
+        return (parseInt(n) - parseInt(q));
+    }
+    else if (operator === 'mult') {
+        return (parseInt(n) * parseInt(q));
+    }
+    else if (operator === 'div') {
+        return (parseInt(n) / parseInt(q));
+    }
+    else
+    return 0
+    
+}
+
+console.log(basicOperations("div",12,2));
+console.log(basicOperations("div",12,5));
+console.log(basicOperations("mult",4,8));
+console.log(basicOperations("add",1,1));
+console.log(basicOperations("subtract",4,9));
+console.log(basicOperations("cheese",2,3));
+console.log(basicOperations("add","peanut butter","jelly"));
