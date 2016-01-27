@@ -173,7 +173,7 @@ stringRepeat("word ", 3);
 // console.log(stringRepeat("more ",6));
 // console.log(stringRepeat("fun ",7));
 
-*/
+
 
 //**8**
 //Write a function that takes a string, and returns the reverse of that string. 
@@ -191,5 +191,29 @@ console.log(reverse("backwards"));
 console.log(reverse("parallelogram"));
 console.log(reverse("palindromes"));
 console.log(reverse("heynah"));
+*/
 
 
+//**8**
+//Write a function that takes a number and returns the factorial of a number. 
+//The factorial of 5 is 5x4x3x2x1. The factorial of 0 is 1. Test your input on a 
+//few numbers, including negative numbers.
+
+
+var factorial = function(n) {
+     if (n===0) {
+         return 1;
+     }
+     
+     for (var i = n; i > 0; i--) {
+         n *= i;
+     }
+     
+        return n;
+     }
+
+console.log(factorial(4));
+console.log(factorial(3));
+console.log(factorial(-2));
+console.log(factorial(-1));
+console.log(factorial(0));
