@@ -155,7 +155,7 @@ console.log(basicOperations("add",1,1));
 console.log(basicOperations("subtract",4,9));
 console.log(basicOperations("cheese",2,3));
 console.log(basicOperations("add","peanut butter","jelly"));
-*/
+
 
 
 //**7**
@@ -163,10 +163,33 @@ console.log(basicOperations("add","peanut butter","jelly"));
 //repeated that many number of times. Test your function with various inputs.
 
 var stringRepeat = function(string,number) {
-    return(string.repeat(parseInt(number)));
+    var result = (string.repeat(number));
+    console.log(result);
 }
 
-console.log(stringRepeat("fun ",5));
-console.log(stringRepeat("more ",6));
-console.log(stringRepeat("fun ",7));
+stringRepeat("word ", 3);
+
+// console.log(stringRepeat("fun ",5));
+// console.log(stringRepeat("more ",6));
+// console.log(stringRepeat("fun ",7));
+
+*/
+
+//**8**
+//Write a function that takes a string, and returns the reverse of that string. 
+//For example, if you pass the function the string “hello”, it should return “olleh”. 
+//Test your function on a few inputs, including the empty string.
+
+function reverse(s) {
+  var o = '';
+  for (var i = s.length - 1; i >= 0; i--)
+    o += s[i];
+  return o;
+};
+
+console.log(reverse("backwards"));
+console.log(reverse("parallelogram"));
+console.log(reverse("palindromes"));
+console.log(reverse("heynah"));
+
 
