@@ -1,6 +1,7 @@
 //Write a function that takes a string and returns the first character of the string. 
 //Test your function on a few inputs, including the empty string.
-/*var firstLetter = function(string){
+/*
+var firstLetter = function(string){
     return string.substr(0,1);
 }
 
@@ -42,8 +43,12 @@ var letNoIndex = function(string,number) {
 
 console.log(letNoIndex("bananas", 3));
 
+console.log(letNoIndex("",2));
+
 var letNoIndex = function(string, number) {
     return string.substr( (parseInt(number)-1) , 1)
 }
 
 console.log(letNoIndex("pineapples", 5));
+
+console.log(letNoIndex("",2));
