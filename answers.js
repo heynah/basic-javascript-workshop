@@ -191,7 +191,7 @@ console.log(reverse("backwards"));
 console.log(reverse("parallelogram"));
 console.log(reverse("palindromes"));
 console.log(reverse("heynah"));
-*/
+
 
 
 //**8**
@@ -210,10 +210,99 @@ var factorial = function(n) {
      }
      
         return n;
-     }
+     };
 
 console.log(factorial(4));
 console.log(factorial(3));
 console.log(factorial(-2));
 console.log(factorial(-1));
 console.log(factorial(0));
+
+
+
+//**9**
+//Write a function that takes a phrase as a string, and returns the longest word 
+//in that phrase. If the phrase contains more than one such word, return the first 
+//occurrence. Test your function on a few inputs.
+
+var longestWord = function(phrase) {
+    var wordsArr = phrase.split(' ');
+    var longest = 0;
+    var word = null;
+    for (var i = 0; i < wordsArr.length; i++) {
+        if (longest < wordsArr[i].length) {
+            longest = wordsArr[i].length;
+            word = wordsArr[i];
+        }
+    }
+    console.log(wordsArr);
+    return word;
+    
+};
+
+
+console.log("The longest word is: " + longestWord("I wish I was like six-foot-nine"));
+console.log("The longest word is: " + longestWord("So I can get with Leoshi"));
+console.log("The longest word is: " + longestWord("Cause she don't know me but yo she's really fine"));
+console.log("The longest word is: " + longestWord("You know I see her all the time everywhere I go"));
+console.log("The longest word is: " + longestWord("And even in my dreams I can scheme a way to make her mine"));
+console.log("The longest word is: " + longestWord("Cause I know she's livin phat"));
+
+
+//**10**
+//Write a function that takes a phrase, and returns the same phrase with every 
+//word capitalized. For example, if you pass your function "hello world", it 
+//should return “Hello World” and if you pass it “HELLO WORLD” or even "HeLLo WoRLD", 
+//it will also return "Hello World". Test your function of a few inputs.
+
+function capitalizeEachWord(str) {
+    return str.replace(/\w\S* /g, function(txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    });
+}
+
+console.log(capitalizeEachWord("I wish I was like six-foot-nine"));
+console.log(capitalizeEachWord("So I can get with Leoshi"));
+console.log(capitalizeEachWord("Cause I know she's livin phat"));
+
+
+function loopCapitalizeEachWord(str) {
+    var result = [];
+    var wordsArr = str.split(" ");
+    for (var i = 0; i < wordsArr.length; i++) {
+        var newWord = wordsArr[i].charAt(0).toUpperCase() +  wordsArr[i].slice(1).toLowerCase();
+    
+        result.push(newWord);
+        
+    };
+        return result.join(" ");
+    
+}
+
+
+
+console.log(loopCapitalizeEachWord("I wish I was like six-foot-nine"));
+console.log(loopCapitalizeEachWord("So I can get with Leoshi"));
+console.log(loopCapitalizeEachWord("Cause I know she's livin phat"));
+
+*/
+
+//Write a function that takes an array and returns the largest number of the array. 
+//Test your function on a few inputs.
+
+
+function returBig(arr) {
+    var num = 0;
+    arr.forEach(function (current, index) {
+
+        if(num < current){
+            num = current
+        }
+        if(index === 2){
+            console.log(current)
+        }
+    })
+    return num;
+}
+returBig([1,2,3,4])
+
