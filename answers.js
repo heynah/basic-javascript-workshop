@@ -285,13 +285,13 @@ console.log(loopCapitalizeEachWord("I wish I was like six-foot-nine"));
 console.log(loopCapitalizeEachWord("So I can get with Leoshi"));
 console.log(loopCapitalizeEachWord("Cause I know she's livin phat"));
 
-*/
+
 
 //Write a function that takes an array and returns the largest number of the array. 
 //Test your function on a few inputs.
 
 
-function returBig(arr) {
+function returnBig(arr) {
     var num = 0;
     arr.forEach(function (current, index) {
 
@@ -304,5 +304,19 @@ function returBig(arr) {
     })
     return num;
 }
-returBig([1,2,3,4])
+returnBig([1,2,3,4])
 
+*/
+
+//Write a function that takes an array of numbers, and returns the sum of all the 
+//numbers in the array.
+
+var arrOfNum = [-43,-62,15,-6,3,-43,23,-76,154,-21,54,9]
+
+var sum;
+
+var sumWithReduce = arrOfNum.reduce(function(acc, num) {
+   return acc + num;
+}, 0)
+
+console.log(sumWithReduce)
