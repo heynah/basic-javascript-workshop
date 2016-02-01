@@ -306,8 +306,25 @@ function returnBig(arr) {
 }
 returnBig([1,2,3,4])
 
-*/
+//Write a function that takes an array, and returns a filtered array. The filtered 
+//array should only contain the truthy values from the initial array. Hint: there 
+//is an array method called filter that can help you with this :)
 
+*/
+var arr;
+
+
+function isTruthy(el) {
+    return el ;
+}
+var arrTest = [0, 1, true, false, "", "word", "worddup", 8];
+
+var truthies = (arr = arrTest).filter(isTruthy);
+
+console.log(truthies);
+
+
+/*
 //Write a function that takes an array of numbers, and returns the sum of all the 
 //numbers in the array.
 
@@ -320,3 +337,5 @@ var sumWithReduce = arrOfNum.reduce(function(acc, num) {
 }, 0)
 
 console.log(sumWithReduce)
+
+*/
